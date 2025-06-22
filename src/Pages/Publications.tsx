@@ -8,7 +8,7 @@ import { AComprehensiveanalysis, AComprehensiveStudy, Anextensivestudey, Compara
 const DevelopPublicatons: React.FC = () => {
   return (
     <section className="min-h-screen flex flex-col scrollbar-hide text-black p-3 pt-[70px] custom-cursor" style={{ cursor: `url(${cursorImage}) 16 16, auto` }}>
-      <h1 className="text-4xl text-center hover:text-emerald-400 duration-300 p-3 mb-3 font-semibold">
+      <h1 className="text-4xl text-center hover:text-emerald-400 duration-300 p-3 mb-3 font-semibold cursor-pointer">
         Journal Articles & Conference Papers
       </h1>
 

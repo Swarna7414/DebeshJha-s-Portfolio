@@ -4,17 +4,17 @@ import sandford from "../assets/Talks/sanford.png";
 
 const Develop:React.FC=()=>{
     return(
-        <section className="p-5 h-screen pt-[80px]">
+        <section className="p-5 h-screen pt-[85px]">
             <div>
                 <h1 className="font-medium text-4xl text-center hover:text-emerald-500 cursor-pointer duration-300">Research Talks & Events</h1>
             </div>
             <div className="mt-5 max-h-[800px] w-full flex flex-col">
                 {/** First Box */}
-                <div className="flex flex-col-reverse md:flex-row items-center cursor-cell gap-4 px-2 hover:scale-98 duration-300">
+                <div className="flex flex-col-reverse cursor-default md:flex-row items-center gap-4 px-2 hover:scale-98 duration-300 group">
                     <div className="flex-1 flex flex-col">
                         <div className="flex items-center font-medium">
-                            <CgEditBlackPoint className="mr-1 mt-1 w-5 h-5"/>
-                            <h1 className="text-xl">From Data to Diagnosis – Advancing Medical Imaging with Curated Dataset and AI Algorithms.</h1>
+                            <CgEditBlackPoint className="mr-1 mt-1 w-5 h-5 group-hover:text-emerald-700"/>
+                            <h1 className="text-xl group-hover:text-emerald-700 transition-all duration-300">From Data to Diagnosis – Advancing Medical Imaging with Curated Dataset and AI Algorithms.</h1>
                         </div>
                         <div className="flex items-center text-md">
                             <IoLocation className="mr-2 text-red-600"/>
@@ -40,11 +40,11 @@ const Develop:React.FC=()=>{
                 <hr className="w-[95%] border-t-1 border-emerald-700 my-4 self-center" />
                 {/**Second Box */}
 
-                <div className="flex flex-col-reverse cursor-cell md:flex-row items-center gap-4 px-2 hover:scale-98 duration-300">
+                <div className="flex flex-col-reverse md:flex-row cursor-default items-center gap-4 px-2 hover:scale-98 duration-300 group">
                     <div className="flex-1 flex flex-col">
-                        <div className="flex items-center font-medium">
+                        <div className="flex items-center font-medium group-hover:text-emerald-700">
                             <CgEditBlackPoint className="mr-1 mt-1 w-5 h-5"/>
-                            <h1 className="text-xl">Beyond Human Vision: Transforming Radiology and GI Endoscopy with AI</h1>
+                            <h1 className="text-xl group:">Beyond Human Vision: Transforming Radiology and GI Endoscopy with AI</h1>
                         </div>
                         <div className="flex items-center text-md">
                             <IoLocation className="mr-2 text-red-600"/>
@@ -67,13 +67,13 @@ const Develop:React.FC=()=>{
                 </div>
                 </div>
 
-            <hr className="w-[95%] border-t-1 border-emerald-700 my-4 self-center" />
+            <hr className="w-[95%] border-t-1 border-emerald-700 cursor-default my-4 self-center" />
 
                 {/**Third Box */}
 
-            <div className="flex flex-col-reverse md:flex-row cursor-cell items-center gap-4 px-2 hover:scale-98 duration-300">
+            <div className="flex flex-col-reverse md:flex-row items-center gap-4 px-2 cursor-default hover:scale-98 duration-300 group">
                     <div className="flex-1 flex flex-col">
-                        <div className="flex items-center font-medium">
+                        <div className="flex items-center font-medium group-hover:text-emerald-700">
                             <CgEditBlackPoint className="mr-1 mt-1 w-5 h-5"/>
                             <h1 className="text-xl">Transforming Medical AI: Advancing Deep Learning for Precision Diagnosis & Image Segmentation</h1>
                         </div>
@@ -100,9 +100,9 @@ const Develop:React.FC=()=>{
                 </div>
             <hr className="w-[95%] border-t-1 border-emerald-700 my-4 self-center" />
 
-            <div className="flex flex-col-reverse md:flex-row cursor-cell items-center gap-4 px-2 hover:scale-98 duration-300">
+            <div className="flex flex-col-reverse md:flex-row items-center cursor-default gap-4 px-2 hover:scale-98 duration-300 group">
                     <div className="flex-1 flex flex-col">
-                        <div className="flex items-center font-medium">
+                        <div className="flex items-center font-medium group-hover:text-emerald-700">
                             <CgEditBlackPoint className="mr-1 mt-1 w-5 h-5"/>
                             <h1 className="text-xl">Biopsy Free early detection of liver diseases using AI</h1>
                         </div>
@@ -128,9 +128,9 @@ const Develop:React.FC=()=>{
                 </div>
             <hr className="w-[95%] border-t-1 border-emerald-700 my-4 self-center" />
 
-            <div className="flex flex-col-reverse md:flex-row cursor-cell items-center gap-4 px-2 hover:scale-98 duration-300">
+            <div className="flex flex-col-reverse md:flex-row items-center cursor-default gap-4 px-2 hover:scale-98 duration-300 group">
                     <div className="flex-1 flex flex-col">
-                        <div className="flex items-center font-medium">
+                        <div className="flex items-center font-medium group-hover:text-emerald-700">
                             <CgEditBlackPoint className="mr-1 mt-1 w-5 h-5"/>
                             <h1 className="text-xl">The Future is Here: Deep Learning Algorithms Can Reduce the Miss-Rate in Colonoscopy</h1>
                         </div>
@@ -157,9 +157,9 @@ const Develop:React.FC=()=>{
                 </div>
             <hr className="w-[95%] border-t-1 border-emerald-700 my-4 self-center" />
 
-            <div className="flex flex-col-reverse md:flex-row cursor-cell items-center gap-4 px-2 hover:scale-98 duration-300">
+            <div className="flex flex-col-reverse md:flex-row items-center cursor-default gap-4 px-2 hover:scale-98 duration-300 group">
                     <div className="flex-1 flex flex-col">
-                        <div className="flex items-center font-medium">
+                        <div className="flex items-center font-medium group-hover:text-emerald-700">
                             <CgEditBlackPoint className="mr-1 mt-1 w-5 h-5"/>
                             <h1 className="text-xl">Khwopa to Northwestern: My PhD Journey and Some Personal Reflections</h1>
                         </div>
