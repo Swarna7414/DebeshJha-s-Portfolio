@@ -9,18 +9,18 @@ const Develop: React.FC = () => {
       <div className="container">
         <div className="hero-content">
           <h1 className="hero-title">
-            Hello, I'm  <br /><span className='text-black hover:text-blue-500'>Debash Jha <span className='wave-on-hover'>👋</span></span>
+            Hello, I'm  <br /><span className='text-black hover:text-blue-500'>Debesh Jha <span className='wave-on-hover'>👋</span></span>
           </h1>
-          <h2 className="hero-subtitle">Full Stack Developer</h2>
+          <h2 className="hero-subtitle">AI Researcher & Medical Imaging Scientist</h2>
           <p className="hero-description">
-            I'm a Full Stack Developer skilled in Java and React, specializing in responsive,
-            user-friendly interfaces using HTML, CSS, JavaScript, TypeScript, and Tailwind CSS.
+            I'm an Assistant Professor and AI Scientist developing human-centered, trustworthy clinical AI for medical imaging—advancing 
+            diagnosis through multimodal learning, dataset creation, and deployable healthcare solutions.
           </p>
           <div className="hero-buttons">
             <button className="btn btn-primary">
               About Me
             </button>
-            <button>
+            <button className='btn btn-secondary'>
               Contact Me
             </button>
           </div>

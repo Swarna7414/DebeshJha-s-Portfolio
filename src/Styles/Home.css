@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   padding: 100px 0 50px;
-  background-color: whitesmoke; /* Optional: dark background */
+  background-color: whitesmoke;
 }
 
 .hero .container {
@@ -22,6 +22,9 @@
   flex: 1;
   min-width: 300px;
   padding-right: 30px;
+
+  /* Mobile first order */
+  order: 2;
 }
 
 .hero-title {
@@ -33,7 +36,15 @@
 }
 
 .hero-title span {
-  color: #72a6c6; /* Your --primary */
+  color: #051f2c;
+  transition: color 0.3s ease;
+  cursor: pointer; 
+  
+}
+
+.hero-title span:hover {
+  color: #007bff;
+  cursor: pointer;
 }
 
 .hero-subtitle {
@@ -48,7 +59,8 @@
   margin-bottom: 30px;
   color: black;
 }
-.hero-span{
+
+.hero-span {
   color: black;
 }
 
@@ -63,16 +75,21 @@
   font-weight: 600;
   padding: 12px 24px;
   border-radius: 6px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .btn-primary {
-  background-color: #6c63ff;
+  background-color: #38a5e4;
   color: white;
 }
 
 .btn-primary:hover {
-  background-color: #594dff;
+  background-color: #039af1;
 }
 
 .btn-secondary {
@@ -81,7 +98,7 @@
 }
 
 .btn-secondary:hover {
-  background-color: #84e4ed;
+  background-color: #38a5e4;
 }
 
 .hero-image {
@@ -91,6 +108,9 @@
   justify-content: center;
   position: relative;
   margin-top: 30px;
+
+  /* Mobile first order */
+  order: 1;
 }
 
 .image-wrapper {
@@ -98,7 +118,7 @@
   width: 350px;
   height: 350px;
   border-radius: 50%;
-  background: linear-gradient(45deg, #14aff7, #0da8f0); /* primary + secondary */
+  background: linear-gradient(45deg, #14aff7, #0da8f0);
   padding: 10px;
   box-shadow: 0 10px 30px rgba(108, 99, 255, 0.3);
   animation: float 6s ease-in-out infinite;
@@ -112,6 +132,26 @@
   border: 5px solid white;
 }
 
+.wave-on-hover {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.wave-on-hover:hover {
+  animation: wave-hand 1.2s ease-in-out 3;
+}
+
+/* Waving Keyframes (3 quick waves) */
+@keyframes wave-hand {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(20deg); }
+  30% { transform: rotate(-15deg); }
+  45% { transform: rotate(20deg); }
+  60% { transform: rotate(-10deg); }
+  75% { transform: rotate(15deg); }
+  100% { transform: rotate(0deg); }
+}
+
 /* Floating Animation */
 @keyframes float {
   0%, 100% {
@@ -122,7 +162,7 @@
   }
 }
 
-/* Responsive (Optional tweaks) */
+/* Responsive Layout */
 @media (max-width: 768px) {
   .hero {
     padding: 60px 0 30px;
@@ -139,5 +179,16 @@
 
   .hero-image {
     margin-top: 40px;
+  }
+}
+
+/* Revert order on wider screens */
+@media (min-width: 769px) {
+  .hero-content {
+    order: 1;
+  }
+
+  .hero-image {
+    order: 2;
   }
 }
