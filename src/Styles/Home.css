@@ -22,9 +22,7 @@
   flex: 1;
   min-width: 300px;
   padding-right: 30px;
-
-  /* Mobile first order */
-  order: 2;
+  order: 2; /* Mobile first order */
 }
 
 .hero-title {
@@ -33,37 +31,51 @@
   margin-bottom: 15px;
   line-height: 1.2;
   color: black;
-}
-
-.hero-title span {
-  color: #051f2c;
-  transition: color 0.3s ease;
-  cursor: pointer; 
-  
-}
-
-.hero-title span:hover {
-  color: #007bff;
   cursor: pointer;
 }
+
+/* 👇 NEW group hover support */
+.group-hover-wrapper {
+  display: inline-block;
+}
+
+.name-hover-group {
+  color: #051f2c;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.group-hover-wrapper:hover .name-hover-group {
+  color: #007bff;
+}
+
+.group-hover-wrapper:hover .wave-on-hover {
+  animation: wave-hand 1.2s ease-in-out 3;
+}
+
 
 .hero-subtitle {
   font-size: 1.5rem;
   font-weight: 500;
   color: black;
   margin-bottom: 20px;
+  text-align:justify;
+  cursor: pointer;
 }
 
 .hero-description {
   font-size: 1.1rem;
   margin-bottom: 30px;
   color: black;
+  text-align: justify;
+  cursor: pointer;
 }
 
 .hero-span {
   color: black;
 }
 
+/* Buttons */
 .hero-buttons {
   display: flex;
   gap: 35px;
@@ -75,14 +87,16 @@
   font-weight: 600;
   padding: 12px 24px;
   border-radius: 6px;
+  transform: scale(1);
   transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+  cursor: pointer;
 }
 
 .btn:hover {
   transform: scale(1.05);
-  cursor: pointer;
 }
 
+/* Primary Button */
 .btn-primary {
   background-color: #38a5e4;
   color: white;
@@ -92,6 +106,7 @@
   background-color: #039af1;
 }
 
+/* Secondary Button */
 .btn-secondary {
   background-color: #e5e5e5;
   color: #111;
@@ -99,8 +114,10 @@
 
 .btn-secondary:hover {
   background-color: #38a5e4;
+  color: black;
 }
 
+/* Hero Image */
 .hero-image {
   flex: 1;
   min-width: 300px;
@@ -108,8 +125,7 @@
   justify-content: center;
   position: relative;
   margin-top: 30px;
-
-  /* Mobile first order */
+  cursor: pointer;
   order: 1;
 }
 
@@ -132,16 +148,13 @@
   border: 5px solid white;
 }
 
+/* Wave Emoji */
 .wave-on-hover {
   display: inline-block;
   transition: transform 0.3s ease;
 }
 
-.wave-on-hover:hover {
-  animation: wave-hand 1.2s ease-in-out 3;
-}
-
-/* Waving Keyframes (3 quick waves) */
+/* 👇 Now triggered by group hover */
 @keyframes wave-hand {
   0% { transform: rotate(0deg); }
   15% { transform: rotate(20deg); }
