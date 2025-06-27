@@ -35,14 +35,14 @@
 
 
 ::-webkit-scrollbar-thumb {
-  background: #62c7af; /* Tailwind blue-300 */
+  background: #3B82F6;
   border-radius: 10px;
   transition: background 0.3s ease;
 }
 
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #62c7af;
+  background: #3B82F6;
 }
 
 
@@ -60,7 +60,7 @@
 
 .scrollbar-hide:hover {
   scrollbar-width: thin;
-  scrollbar-color: #62c7af transparent;
+  scrollbar-color: #3B82F6 transparent;
 }
 
 .gradient-header {
