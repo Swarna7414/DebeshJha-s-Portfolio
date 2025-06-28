@@ -30,12 +30,9 @@ import {
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { RiTwitterXLine } from 'react-icons/ri';
 
-const Develop: React.FC = () => {
+const Home: React.FC = () => {
   return (
     <section className="relative w-screen min-h-screen overflow-hidden pt-[70px]">
-      <div className="circles-bg">
-        {Array.from({ length: 20 }).map((_, i) => <span key={i}></span>)}
-      </div>
       <section className="relative z-10 min-h-screen flex flex-col xl:flex-row scrollbar-hide">
         <div className="xl:w-1/2 w-full xl:h-screen rounded-3xl xl:mt-4">
           <img
@@ -118,4 +115,4 @@ const IconBox = ({
   </div>
 );
 
-export default Develop;
+export default Home;

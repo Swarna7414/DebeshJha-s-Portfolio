@@ -1,7 +1,7 @@
 import React from 'react';
 import "../Styles/Home.css";
 import "../Styles/animation.css";
-import logo from "../assets/SmallPicture.png";
+import logo from "../assets/Bigscreen-preview.png";
 
 const Develop: React.FC = () => {
   return (
