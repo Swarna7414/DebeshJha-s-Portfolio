@@ -1,6 +1,8 @@
 import React from "react";
+import "../Styles/global.css";
 import HomeScreenImage from "../assets/Home/image2.png";
 import SmallScreen from "../assets/SmallPicture.png";
+import cursorImage from "../assets/cursor.png";
 import {Clarivate,Dblb,Github,GoogleScholr,Linkedin,Orcid,ResearchGate,Semanticscholar,Twitter,} from '../Services/Calls';
 import { FaGoogleScholar } from 'react-icons/fa6';
 import {
@@ -15,7 +17,7 @@ import { RiTwitterXLine } from 'react-icons/ri';
 
 const DevelopHome: React.FC = () => {
   return (
-    <section className="h-screen w-full p-5 pt-[90px]">
+    <section className="h-screen w-full p-5 pt-[90px] custom-cursor" style={{ cursor: `url(${cursorImage}) 16 16, auto` }}>
       <div className="h-full w-full flex flex-col lg:flex-row items-center justify-between">
         <div className="w-1/2 sm:w-[70%] lg:w-1/3 h-[83%] flex items-center justify-center ml-0 lg:ml-16">
           
@@ -29,12 +31,12 @@ const DevelopHome: React.FC = () => {
           <img
             src={HomeScreenImage}
             alt="Home Image"
-            className="hidden lg:block w-full h-full rounded-4xl hover:rounded-2xl object-contain hover:scale-101 duration-300 cursor-pointer hover:shadow-2xl hover:shadow-blue-500"
+            className="hidden lg:block w-full h-full rounded-4xl hover:rounded-2xl object-contain hover:scale-101 duration-300 hover:shadow-2xl hover:shadow-blue-500"
           />
         </div>
 
         <div className="lg:w-3/5 sm:w-full h-[83%] rounded-2xl px-5 flex flex-col">
-            <h1 className="text-justify text-xl font-medium cursor-default">
+            <h1 className="text-justify text-xl font-medium">
                 I'm Debash, a Visiting Assistant Professor in the Department of Computer Science at the University of South Dakota. My research focuses on AI-driven tools for medical imaging and diagnostics. 
                 I’ve developed models like ColonSegNet and contributed to datasets such as Kvasir-SEG, HyperKvasir, and PolypGen. Recognized among the world’s top 2% scientists by Stanford and Elsevier, I aim to build reliable systems 
                 that support radiologists in diagnosing faster and more accurately. My work spans gastrointestinal imaging, tumor analysis, and predictive modeling for radiation therapy, as well as vision-language models, anomaly detection, 
@@ -66,7 +68,7 @@ const IconBox = ({
 }) => (
   <div className="border rounded-full hover:border-blue-500 hover:shadow-sm hover:shadow-blue-500">
     <Icon
-      className="text-4xl p-2 text-black rounded-full duration-300 hover:bg-blue-500 cursor-pointer"
+      className="text-4xl p-2 text-black rounded-full duration-300 hover:bg-blue-500 hover:text-white cursor-pointer"
       onClick={onClick}
     />
   </div>

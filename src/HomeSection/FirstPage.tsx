@@ -2,8 +2,21 @@ import React from 'react';
 import "../Styles/Home.css";
 import "../Styles/animation.css";
 import logo from "../assets/Home0.png";
+import { useNavigate } from 'react-router-dom';
 
 const FirstPage: React.FC = () => {
+  const navigate=useNavigate();
+
+  const HandleAbout=()=>{
+    console.log("Redirecting towards Home Page")
+    navigate('/home');
+  }
+
+  const HandleContact=()=>{
+    console.log("Redirecting towards Contact Page")
+    navigate('/contact')
+  }
+
   return (
     <section id="home" className="hero">
       <div className="container">
@@ -11,19 +24,19 @@ const FirstPage: React.FC = () => {
           <h1 className="hero-title group-hover-wrapper">
             Hello, I'm <br />
             <span className="name-hover-group">
-            Debesh Jha <span className="wave-on-hover">👋</span>
+               Debesh Jha <span className="wave-on-hover">👋</span>
             </span>
           </h1>
           <h2 className="hero-subtitle">AI Researcher & Medical Imaging Scientist</h2>
           <p className="hero-description">
-            I'm an Assistant Professor and AI Scientist developing human-centered, trustworthy clinical AI for medical imaging-advancing diagnosis through multimodal learning,
-             dataset creation, real-world deployment, and clinician-aligned innovation.
+             Top-ranked AI researcher developing advanced models and datasets to enhance medical imaging, 
+             diagnostics, and real-world healthcare through intelligent, ethical technologies.
           </p>
           <div className="hero-buttons">
-            <button className="btn btn-primary">
+            <button className="btn btn-primary" onClick={HandleAbout}>
               About Me
             </button>
-            <button className='btn btn-secondary'>
+            <button className='btn btn-secondary' onClick={HandleContact}>
               Contact Me
             </button>
           </div>

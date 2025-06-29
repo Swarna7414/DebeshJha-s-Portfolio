@@ -5,6 +5,7 @@
   align-items: center;
   padding: 100px 0 50px;
   background-color: whitesmoke;
+  cursor: url('../assets/cursor.png'), auto;
 }
 
 .hero .container {
@@ -15,7 +16,7 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .hero-content {
@@ -59,7 +60,6 @@
   font-weight: 500;
   color: black;
   margin-bottom: 20px;
-  text-align:justify;
   cursor: pointer;
 }
 

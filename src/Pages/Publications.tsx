@@ -15,7 +15,7 @@ const DevelopPublicatons: React.FC = () => {
       <div className="flex flex-col xl:flex-row gap-2 mt-2">
         
         <div className="flex flex-col xl:w-1/2">
-          <h1 className="text-3xl ml-2 hover:text-blue-500 mb-2 font-medium cursor-pointer">Journals</h1>
+          <h1 className="text-3xl ml-2 mb-2 font-medium cursor-pointer">Journals</h1>
 
           
           <div className="w-full max-h-[75vh] bg-gray-100 overflow-y-auto text-black p-2 gap-y-5 rounded-2xl shadow-md shadow-gray-700 hover:shadow-lg hover:shadow-blue-200 scrollbar-hide custom-cursor backdrop:backdrop-blur-2xl" style={{ cursor: `url(${cursorImage}) 16 16, auto` }}>
@@ -169,7 +169,7 @@ const DevelopPublicatons: React.FC = () => {
 
         
         <div className="flex flex-col xl:w-1/2">
-          <h1 className="text-3xl ml-2 hover:text-blue-500 mb-2 font-medium cursor-pointer">Conferences</h1>
+          <h1 className="text-3xl ml-2 mb-2 font-medium cursor-pointer">Conferences</h1>
 
           
           <div className="w-full max-h-[75vh] overflow-y-auto text-black p-2 space-y-2 rounded-2xl shadow-md shadow-gray-700 hover:shadow-lg hover:shadow-blue-200 scrollbar-hide custom-cursor bg-transparent backdrop:backdrop-blur-2xl" style={{ cursor: `url(${cursorImage}) 16 16, auto` }}>
