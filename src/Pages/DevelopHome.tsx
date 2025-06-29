@@ -37,7 +37,7 @@ const DevelopHome: React.FC = () => {
 
         <div className="lg:w-3/5 sm:w-full h-[83%] rounded-2xl px-5 flex flex-col">
             <h1 className="text-justify text-xl font-medium">
-                I'm Debash, a Visiting Assistant Professor in the Department of Computer Science at the University of South Dakota. My research focuses on AI-driven tools for medical imaging and diagnostics. 
+                I'm Debesh Jha, Visiting Assistant Professor in the Department of Computer Science at the University of South Dakota. My research focuses on AI-driven tools for medical imaging and diagnostics. 
                 I’ve developed models like ColonSegNet and contributed to datasets such as Kvasir-SEG, HyperKvasir, and PolypGen. Recognized among the world’s top 2% scientists by Stanford and Elsevier, I aim to build reliable systems 
                 that support radiologists in diagnosing faster and more accurately. My work spans gastrointestinal imaging, tumor analysis, and predictive modeling for radiation therapy, as well as vision-language models, anomaly detection, 
                 and surgical AI. I’m honored to be named a 2024 Top Scholar by ScholarGPS, ranking in the top 0.5% of scholars worldwide, including #51 in Image Segmentation and #1,201 in Medical Imaging, based on productivity, impact, and quality.

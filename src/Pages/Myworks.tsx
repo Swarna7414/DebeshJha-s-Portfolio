@@ -49,9 +49,9 @@ const Myworks: React.FC = () => {
                   {/* BACK SIDE - Text */}
                   <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-blue-500/30 text-white p-4 rounded-lg flex flex-col items-center justify-center overflow-y-auto text-center text-sm">
                     <p className="max-w-[90%] mx-auto text-justify leading-relaxed text-black">
-                      PVTFormer is a novel deep learning model for accurate liver segmentation from CT scans, vital for diagnosis and treatment planning. Built on the pretrained Pyramid Vision Transformer (PVT v2), 
-                      it integrates residual upsampling, advanced decoding, and refined feature channels to enhance semantic segmentation. Evaluated on the LiTS 2017 benchmark, PVTFormer achieves a dice coefficient of 86.78%, 
-                      mIoU of 78.46%, and HD of 3.50, setting a new standard in liver segmentation
+                      PVTFormer is a deep learning model for precise liver segmentation in CT scans, aiding diagnosis and treatment. Based on PVT v2,
+                       it uses residual upsampling and advanced decoding. On the LiTS 2017 benchmark, it achieved 86.78% Dice, 78.46% mIoU, and 3.50 HD, 
+                       setting a new segmentation standard.
                     </p>
                     <div className="flex justify-between w-1/2 items-center text-2xl mt-3">
                       <button className="mt-2 text-black font-semibold rounded-full cursor-pointer hover:scale-105 duration-300 px-2.5 py-2 bg-button hover:text-blue-400 hover:bg-black"onClick={PVTFormer}>
@@ -92,9 +92,8 @@ const Myworks: React.FC = () => {
                   {/* BACK SIDE - Text */}
                   <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-blue-500/30 text-white p-4 rounded-lg flex flex-col items-center justify-center overflow-y-auto text-center text-sm">
                     <p className="max-w-[90%] mx-auto text-justify leading-relaxed text-black">
-                      MDNet is a multi-decoder deep learning model designed for accurate organ segmentation from abdominal CT scans, crucial for diagnosis and treatment. It uses a pre-trained MiT-B2 encoder and multiple decoders, 
-                      each enhancing features through dilated blocks and spatial attention from previous predictions. This iterative refinement improves segmentation accuracy. MDNet achieves high Dice scores of 0.9013 (LiTS) and 0.9169
-                      (MSD Spleen), with low Hausdorff distances of 3.79 and 2.26, respectively. It outperforms baseline models in robustness and interpretability
+                      MDNet is a multi-decoder model for precise organ segmentation from abdominal CT scans. Using a MiT-B2 encoder and iterative refinement via dilated blocks and spatial attention, it achieves Dice scores of 0.9013 
+                      (LiTS) and 0.9169 (MSD Spleen), with low Hausdorff distances, outperforming baselines in accuracy and interpretability.
                     </p>
                     <div className="flex justify-between w-1/2 items-center text-2xl mt-3">
                       <button className="mt-2 text-black font-semibold rounded-full cursor-pointer hover:scale-105 duration-300 px-2.5 py-2 bg-button hover:text-blue-400 hover:bg-black"onClick={MdNetGit}>
@@ -133,9 +132,8 @@ const Myworks: React.FC = () => {
                   {/* BACK SIDE - Text */}
                   <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-blue-500/30 text-white p-4 rounded-lg flex flex-col items-center justify-center overflow-y-auto text-center text-sm">
                     <p className="max-w-[90%] mx-auto text-justify leading-relaxed text-black">
-                     TransNetR is a novel real-time deep learning model for colon polyp segmentation, addressing challenges like high polyp miss rates and poor generalization in existing methods. Built as an encoder-decoder 
-                     network using pre-trained ResNet50 and three decoder blocks, it achieves high accuracy with a Dice score of 0.8706 and mIoU of 0.8016 on the Kvasir-SEG dataset, while maintaining 54.60 FPS. TransNetR also 
-                    shows strong generalizability, outperforming state-of-the-art models on out-of-distribution datasets, including PolypGen and other popular benchmarks, proving its robustness across multiple clinical settings.
+                     TransNetR is a real-time deep learning model for colon polyp segmentation, using a ResNet50-based encoder-decoder architecture. It achieves 0.8706 Dice, 0.8016 mIoU on Kvasir-SEG, and runs at 54.60 FPS. 
+                     TransNetR outperforms state-of-the-art models on out-of-distribution datasets, demonstrating strong generalizability and robustness across diverse clinical settings.
                     </p>
                     <div className="flex justify-between w-1/2 items-center text-2xl mt-3">
                       <button className="mt-2 text-black font-semibold rounded-full cursor-pointer hover:scale-105 duration-300 px-2.5 py-2 bg-button hover:text-blue-400 hover:bg-black"onClick={TransnetRGit}>
@@ -174,9 +172,8 @@ const Myworks: React.FC = () => {
                   {/* BACK SIDE - Text */}
                   <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-blue-500/30 text-white p-4 rounded-lg flex flex-col items-center justify-center overflow-y-auto text-center text-sm">
                     <p className="max-w-[90%] mx-auto text-justify leading-relaxed text-black">
-                     TransRUPNet is a real-time deep learning model developed for accurate polyp segmentation to aid early colorectal cancer detection. This encoder-decoder architecture includes three encoder-decoder blocks and upsampling layers, 
-                     processing 256×256 images at 47.07 FPS. It achieves a mean Dice score of 0.7786 and mIoU of 0.7210 on out-of-distribution datasets. Tested on the PolypGen dataset, TransRUPNet provides real-time feedback with strong accuracy and 
-                     generalization, outperforming existing methods in handling unseen data, making it effective for both clinical and diverse real-world scenarios.
+                     TransRUPNet is a real-time deep learning model for accurate polyp segmentation, aiding early colorectal cancer detection. Using a three-block encoder-decoder design, it processes 256×256 images at 47.07 FPS. 
+                     It achieves 0.7786 Dice and 0.7210 mIoU on unseen data, showing strong generalization and outperforming existing methods in real-world scenarios.
                     </p>
                     <div className="flex justify-between w-1/2 items-center text-2xl mt-3">
                       <button className="mt-2 text-black font-semibold rounded-full cursor-pointer hover:scale-105 duration-300 px-2.5 py-2 bg-button hover:text-blue-400 hover:bg-black"onClick={TransRUPNetgit}>
@@ -215,9 +212,8 @@ const Myworks: React.FC = () => {
                   {/* BACK SIDE - Text */}
                   <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-blue-500/30 text-white p-4 rounded-lg flex flex-col items-center justify-center overflow-y-auto text-center text-sm">
                     <p className="max-w-[90%] mx-auto text-justify leading-relaxed text-black">
-                     DoubleU-Net is a novel deep learning architecture for semantic image segmentation, particularly in medical imaging. It stacks two U-Net models, with the first using a pre-trained VGG-19 encoder 
-                     for feature extraction and the second enhancing semantic information. Atrous Spatial Pyramid Pooling (ASPP) is incorporated to capture rich contextual data. Evaluated on multiple datasets—including 
-                     CVC-ClinicDB, 2015 MICCAI, and the 2018 Data Science Bowl—DoubleU-Net outperforms standard U-Net, especially in detecting small or flat polyps. Its strong accuracy and generalization make it a robust baseline for medical image segmentation tasks.
+                     DoubleU-Net is a deep learning model for semantic segmentation, stacking two U-Nets to enhance accuracy. The first uses VGG-19 for feature extraction, while the second refines semantics. 
+                     With ASPP for context, it outperforms U-Net on datasets like CVC-ClinicDB and MICCAI 2015, excelling in small or flat polyp detection.
                     </p>
                     <div className="flex justify-between w-1/2 items-center text-2xl mt-3">
                       <button className="mt-2 text-black font-semibold rounded-full cursor-pointer hover:scale-105 duration-300 px-2.5 py-2 bg-button hover:text-blue-400 hover:bg-black"onClick={DoubleUNetgithub}>
@@ -255,9 +251,8 @@ const Myworks: React.FC = () => {
                   {/* BACK SIDE - Text */}
                   <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-blue-500/30 text-white p-4 rounded-lg flex flex-col items-center justify-center overflow-y-auto text-center text-sm">
                     <p className="max-w-[90%] mx-auto text-justify leading-relaxed text-black">
-                      ResUNet++ is an enhanced deep learning architecture designed for accurate polyp detection and segmentation in colonoscopy images. Aimed at aiding endoscopists in removing abnormal tissue to prevent cancer, 
-                      it builds on the ResUNet framework for pixel-wise segmentation. Evaluated on public datasets like Kvasir-SEG and CVC-612, ResUNet++ outperforms existing models such as U-Net and ResUNet. It achieves a Dice coefficient 
-                      of 81.33% and mIoU of 79.27% on Kvasir-SEG, and 79.55% Dice with 79.62% mIoU on CVC-612, highlighting its effectiveness in medical image segmentation tasks.
+                      ResUNet++ is an advanced deep learning model for precise polyp segmentation in colonoscopy images. Built on ResUNet, it improves pixel-wise accuracy. On Kvasir-SEG and CVC-612 datasets, 
+                      it achieves Dice scores of 81.33% and 79.55%, outperforming U-Net and ResUNet, making it a strong tool for medical image analysis.
                     </p>
                     <div className="flex justify-between w-1/2 items-center text-2xl mt-3">
                       <button className="mt-2 text-black font-semibold rounded-full cursor-pointer hover:scale-105 duration-300 px-2.5 py-2 bg-button hover:text-blue-400 hover:bg-black"onClick={Resunetgithub}>
@@ -296,9 +291,8 @@ const Myworks: React.FC = () => {
                   {/* BACK SIDE - Text */}
                   <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-blue-500/30 text-white p-4 rounded-lg flex flex-col items-center justify-center overflow-y-auto text-center text-sm">
                     <p className="max-w-[90%] mx-auto text-justify leading-relaxed text-black">
-                      ResUNet + CRF + TTA is an advanced deep learning model developed for precise identification and segmentation of polyps in colonoscopy images. Intended to assist endoscopists in excising abnormal growths and reducing the risk of cancer progression, 
-                      it extends the ResUNet architecture for detailed pixel-level segmentation. Tested on publicly available datasets such as Kvasir-SEG and CVC-612, ResUNet++ surpasses prominent models like U-Net and ResUNet. It records a Dice score of 81.33% 
-                      and a mean Intersection over Union (mIoU) of 79.27% on Kvasir-SEG, and achieves 79.55% Dice and 79.62% mIoU on CVC-612, demonstrating superior segmentation performance.
+                      ResUNet + CRF + TTA is an advanced model for accurate polyp segmentation in colonoscopy images. Enhancing ResUNet with Conditional Random Fields and Test-Time Augmentation, it achieves 81.33% Dice on Kvasir-SEG and 79.55% on CVC-612, 
+                      outperforming U-Net and ResUNet in precision and clinical relevance.
                     </p>
                     <div className="flex justify-between w-1/2 items-center text-2xl mt-3">
                       <button className="mt-2 text-black font-semibold rounded-full cursor-pointer hover:scale-105 duration-300 px-2.5 py-2 bg-button hover:text-blue-400 hover:bg-black"onClick={ResUnetCraGithub}>
@@ -337,9 +331,8 @@ const Myworks: React.FC = () => {
                   {/* BACK SIDE - Text */}
                   <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-blue-500/30 text-white p-4 rounded-lg flex flex-col items-center justify-center overflow-y-auto text-center text-sm">
                     <p className="max-w-[90%] mx-auto text-justify leading-relaxed text-black">
-                      Computer-aided methods enhance colonoscopy by improving polyp detection, localization, and segmentation. This study benchmarks state-of-the-art models using the Kvasir-SEG dataset, 
-                      evaluating accuracy and speed. ColonSegNet shows superior performance with 0.8000 average precision, 0.8100 mIoU, 0.8206 Dice score, and the highest speed of 182.38 FPS. These results 
-                      highlight the need for benchmarking to ensure fair evaluation and reproducibility in real-time clinical applications.
+                      Computer-aided methods improve polyp detection and segmentation in colonoscopy. This study benchmarks leading models on the Kvasir-SEG dataset, assessing both accuracy and speed. ColonSegNet leads 
+                      with 0.8206 Dice, 0.8100 mIoU, 0.8000 AP, and 182.38 FPS, emphasizing the importance of benchmarking for fair, real-time clinical evaluation.
                     </p>
                     <div className="flex justify-between w-1/2 items-center text-2xl mt-3">
                       <button className="mt-2 text-black font-semibold rounded-full cursor-pointer hover:scale-105 duration-300 px-2.5 py-2 bg-button hover:text-blue-400 hover:bg-black"onClick={ColonSegNetGithub}>
@@ -378,9 +371,8 @@ const Myworks: React.FC = () => {
                   {/* BACK SIDE - Text */}
                   <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-blue-500/30 text-white p-4 rounded-lg flex flex-col items-center justify-center overflow-y-auto text-center text-sm">
                     <p className="max-w-[90%] mx-auto text-justify leading-relaxed text-black">
-                      NanoNet is a lightweight deep learning model designed for real-time semantic segmentation in gastrointestinal endoscopy. It targets accurate delineation of lesions in video capsule and colonoscopy images, 
-                      addressing challenges of high-definition visuals and operator dependency. NanoNet achieves superior accuracy and speed while maintaining low model complexity, using only ~36,000 parameters. Tested on various 
-                      endoscopy datasets, it balances performance, latency, and size, making it suitable for low-end clinical devices.
+                      NanoNet is a lightweight deep learning model for real-time lesion segmentation in gastrointestinal endoscopy. With only ~36,000 parameters, it delivers high accuracy and speed across endoscopy datasets.
+                       Designed for efficiency, NanoNet balances performance and latency, making it ideal for deployment on low-end clinical devices with limited resources.
                     </p>
                     <div className="flex justify-between w-1/2 items-center text-2xl mt-3">
                       <button className="mt-2 text-black font-semibold rounded-full cursor-pointer hover:scale-105 duration-300 px-2.5 py-2 bg-button hover:text-blue-400 hover:bg-black"onClick={NanoNetGithub}>
@@ -419,10 +411,8 @@ const Myworks: React.FC = () => {
                   {/* BACK SIDE - Text */}
                   <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-blue-500/30 text-white p-4 rounded-lg flex flex-col items-center justify-center overflow-y-auto text-center text-sm">
                     <p className="max-w-[90%] mx-auto text-justify leading-relaxed text-black">
-                      Colonoscopy is crucial for detecting colorectal polyps, where accurate segmentation aids in treatment planning and prognosis. Manual labeling is time-consuming and error-prone, prompting the need for automated, 
-                      fast, and precise segmentation. This study introduces DDANet, a dual decoder attention network, evaluated on Kvasir-SEG and tested on unseen data. It achieves a Dice score of 0.7874, mIoU of 0.7010, recall of 0.7987, 
-                      and precision of 0.8577, showcasing strong generalization.
-
+                      DDANet is a dual decoder attention network designed for fast, accurate polyp segmentation in colonoscopy. Addressing the limitations of manual labeling, it achieves 0.7874 Dice, 0.7010 mIoU, 0.7987 recall, 
+                      and 0.8577 precision on Kvasir-SEG and unseen data, demonstrating strong generalization for clinical use and prognosis support.
                     </p>
                     <div className="flex justify-between w-1/2 items-center text-2xl mt-3">
                       <button className="mt-2 text-black font-semibold rounded-full cursor-pointer hover:scale-105 duration-300 px-2.5 py-2 bg-button hover:text-blue-400 hover:bg-black"onClick={DDANetGithub}>
@@ -462,10 +452,8 @@ const Myworks: React.FC = () => {
                   {/* BACK SIDE - Text */}
                   <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-blue-500/30 text-white p-4 rounded-lg flex flex-col items-center justify-center overflow-y-auto text-center text-sm">
                     <p className="max-w-[90%] mx-auto text-justify leading-relaxed text-black">
-                      Deep Neural Networks (DNNs) are widely used but require high computational power for training, limiting access for those without advanced hardware. To address this, LightLayers is introduced—a method that reduces 
-                      trainable parameters using matrix factorization. It includes LightDense and LightConv2D layers, which match the performance of standard layers with fewer parameters. Tested on MNIST, Fashion MNIST, CIFAR-10, and CIFAR-100, 
-                      LightLayers delivers strong results with significantly lower computational demand, making deep learning more accessible and efficient.
-
+                      LightLayers is a lightweight deep learning approach that reduces trainable parameters using matrix factorization. Featuring LightDense and LightConv2D layers, it matches standard layer performance with less computation. 
+                      Tested on MNIST, CIFAR-10, and more, LightLayers offers efficient, accessible training for users without high-end hardware, enabling broader deep learning adoption.
                     </p>
                     <div className="flex justify-between w-1/2 items-center text-2xl mt-3">
                       <button className="mt-2 text-black font-semibold rounded-full cursor-pointer hover:scale-105 duration-300 px-2.5 py-2 bg-button hover:text-blue-400 hover:bg-black"onClick={LightLayersGithub}>
@@ -504,11 +492,8 @@ const Myworks: React.FC = () => {
                   {/* BACK SIDE - Text */}
                   <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-blue-500/30 text-white p-4 rounded-lg flex flex-col items-center justify-center overflow-y-auto text-center text-sm">
                     <p className="max-w-[90%] mx-auto text-justify leading-relaxed text-black">
-                      PNS-Net is a novel video polyp segmentation (VPS) model designed to overcome the limitations of traditional CNN-based methods, which struggle with capturing global temporal and spatial context. 
-                      Built entirely on normalized self-attention blocks without recurrence or CNNs, PNS-Net achieves real-time performance (\~140 FPS) on a single RTX 2080 GPU without post-processing. It delivers 
-                      state-of-the-art results on challenging VPS datasets and proves effective across various settings, making it a powerful and efficient solution for video-based polyp segmentation.
-
-
+                      PNS-Net is a real-time video polyp segmentation model built entirely on normalized self-attention blocks, avoiding CNNs and recurrence. Running at ~140 FPS on a single GPU, it achieves state-of-the-art 
+                      results on VPS datasets, effectively capturing spatial-temporal context and offering a fast, efficient solution for video-based polyp segmentation.
                     </p>
                     <div className="flex justify-between w-1/2 items-center text-2xl mt-3">
                       <button className="mt-2 text-black font-semibold rounded-full cursor-pointer hover:scale-105 duration-300 px-2.5 py-2 bg-button hover:text-blue-400 hover:bg-black"onClick={PNSNetgithub}>
@@ -547,8 +532,8 @@ const Myworks: React.FC = () => {
                   {/* BACK SIDE - Text */}
                   <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-blue-500/30 text-white p-4 rounded-lg flex flex-col items-center justify-center overflow-y-auto text-center text-sm">
                     <p className="max-w-[90%] mx-auto text-justify leading-relaxed text-black">
-                     Minimally Invasive Surgery (MIS) benefits from advancements in hardware and software, yet challenges remain in accurately detecting and tracking surgical instruments. This study evaluates deep learning models for automatic segmentation in laparoscopy, 
-                     a key step toward tool tracking. Among the methods tested, DDANet outperforms others with a Dice score of 0.8739, mIoU of 0.8183, and real-time speed of 101.36 FPS on the ROBUST-MIS 2019 dataset, proving its effectiveness for surgical applications.
+                     This study benchmarks deep learning models for surgical instrument segmentation in laparoscopy, crucial for tool tracking in minimally invasive surgery (MIS). DDANet leads with a Dice score of 0.8739, 
+                     mIoU of 0.8183, and 101.36 FPS on the ROBUST-MIS 2019 dataset, demonstrating high accuracy and real-time surgical applicability.
                     </p>
                     <div className="flex justify-between w-1/2 items-center text-2xl mt-3">
                       <button className="mt-2 text-black font-semibold rounded-full cursor-pointer hover:scale-105 duration-300 px-2.5 py-2 bg-button hover:text-blue-400 hover:bg-black"onClick={UnetGithub}>

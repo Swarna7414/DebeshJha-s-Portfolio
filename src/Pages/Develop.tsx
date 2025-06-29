@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import "../Styles/Home.css";
 import "../Styles/animation.css";
-import FirstPage from '../HomeSection/Firstpage';
-import SecondPage from '../HomeSection/SecondPage';
+import FirstPage from '../HomeSection/FirstPage';
+// import SecondPage from '../HomeSection/SecondPage';
 
 const Develop: React.FC = () => {
 
@@ -17,7 +17,7 @@ const Develop: React.FC = () => {
   return (
     <>
       <FirstPage/>
-      {isXL && <SecondPage/>}
+      {/* {isXL && <SecondPage/>} */}
     </>
   );
 };

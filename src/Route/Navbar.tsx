@@ -34,7 +34,7 @@ const navLinkClasses = ({ isActive }: { isActive: boolean }) =>
         <div className="hidden xl:flex flex-row gap-8 text-md">
           <NavLink to="/home" className={navLinkClasses}>Home</NavLink>
           <NavLink to="/publication" className={navLinkClasses}>Publications</NavLink>
-          <NavLink to="/workshop" className={navLinkClasses}>Workshops & Talks</NavLink>
+          <NavLink to="/workshop" className={navLinkClasses}>Professional Talks</NavLink>
           <NavLink to="/professional" className={navLinkClasses}>Professional Career</NavLink>
           <NavLink to="/dataset" className={navLinkClasses}>DataSet</NavLink>
           <NavLink to="/myworks" className={navLinkClasses}>MyWorks</NavLink>
@@ -60,7 +60,7 @@ const navLinkClasses = ({ isActive }: { isActive: boolean }) =>
         <div className="flex flex-col gap-4 text-black text-md p-6 pt-[80px] bg-blue-200/30 h-full backdrop-blur-xl z-50">
           <NavLink to="/home" className={navLinkClasses}>Home</NavLink>  
           <NavLink to="/publication" className={navLinkClasses}>Publications</NavLink>
-          <NavLink to="/workshop" className={navLinkClasses}>Workshops & Talks</NavLink>
+          <NavLink to="/workshop" className={navLinkClasses}>Professional Talks</NavLink>
           <NavLink to="/professional" className={navLinkClasses}>Professional Career</NavLink>
           <NavLink to="/dataset" className={navLinkClasses}>DataSet</NavLink>
           <NavLink to="/myworks" className={navLinkClasses}>MyWorks</NavLink>

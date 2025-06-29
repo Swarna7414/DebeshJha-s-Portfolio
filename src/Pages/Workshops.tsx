@@ -1,6 +1,9 @@
 import { CgEditBlackPoint } from "react-icons/cg";
 import { IoLocation } from "react-icons/io5";
 import sandford from "../assets/Talks/sanford.png";
+import IItRorke from "../assets/Talks/𝗜𝗜𝗧𝗥𝗼𝗼𝗿𝗸𝗲𝗲.png"
+import MNIT1 from "../assets/Talks/MNIT1.png"
+import MNIT2 from "../assets/Talks/MNIT2.png"
 
 const Workshops:React.FC=()=>{
     return(
@@ -8,7 +11,8 @@ const Workshops:React.FC=()=>{
             <div>
                 <h1 className="font-medium text-4xl text-center hover:text-blue-500 cursor-pointer duration-300">Research Talks & Events</h1>
             </div>
-            <div className="mt-5 max-h-[800px] w-full flex flex-col">
+            <div className="mt-5 max-h-[800px] w-full flex flex-col cursor-pointer">
+
                 {/** First Box */}
                 <div className="flex flex-col-reverse cursor-default md:flex-row items-center gap-4 px-2 hover:scale-101 duration-300 group">
                     <div className="flex-1 flex flex-col">
@@ -33,6 +37,89 @@ const Workshops:React.FC=()=>{
                 </div>
                 </div>
                 <hr className="w-[95%] border-t-1 border-blue-700 my-4 self-center" />
+
+                <div className="flex flex-col-reverse cursor-default md:flex-row items-center gap-4 px-2 hover:scale-101 duration-300 group">
+                    <div className="flex-1 flex flex-col">
+                        <div className="flex items-center font-medium">
+                            <CgEditBlackPoint className="mr-1 mt-1 w-5 h-5 group-hover:text-blue-700"/>
+                            <h1 className="text-xl group-hover:text-blue-700 transition-all duration-300">Explainable Transformers and Mamba Models for Medical Image Interpretation</h1>
+                        </div>
+                        <div className="flex items-center text-md">
+                            <IoLocation className="mr-2 text-red-600"/>
+                              <h1>IIT Roorkee, 2025</h1>
+                        </div>
+                        <p className="text-justify ml-1 flex-grow">
+                            - I had the honor of presenting " <span className="italic">Explainable Transformers and Mamba Models for Medical Image Interpretation"</span> at the FDP on Explainable AI in Healthcare, 
+                            organized by IIT Roorkee & UPES. I shared insights on transformer-based models, real-world radiology applications, and challenges in building trustworthy clinical AI. Grateful to the organizers 
+                            and 41+ participants for the engaging discussions on ethical, transparent AI in medicine.
+                        </p>
+                </div>
+                <div className="flex items-center justify-center">
+                    <img 
+                    src={IItRorke}
+                    alt="sanfordimage" 
+                    className="w-full max-w-xs object-contain rounded-2xl cursor-pointer"
+                />
+                
+                </div>
+                </div>
+                <hr className="w-[95%] border-t-1 border-blue-700 my-4 self-center" />
+
+                {/**BOX */}
+                <div className="flex flex-col-reverse cursor-default md:flex-row items-center gap-4 px-2 hover:scale-101 duration-300 group">
+                    <div className="flex-1 flex flex-col">
+                        <div className="flex items-center font-medium">
+                            <CgEditBlackPoint className="mr-1 mt-1 w-5 h-5 group-hover:text-blue-700"/>
+                            <h1 className="text-xl group-hover:text-blue-700 transition-all duration-300">Revealing the Unseen: Deep Learning for Clinically Silent Patterns in Radiology</h1>
+                        </div>
+                        <div className="flex items-center text-md">
+                            <IoLocation className="mr-2 text-red-600"/>
+                              <h1> MNIT Jaipur, 2025</h1>
+                        </div>
+                        <p className="text-justify ml-1 flex-grow">
+                            - I discussed how AI can uncover hidden anomalies in radiological images, particularly in liver tumors and complex abdominal cases. The session focused on deep learning’s 
+                            ability to detect subtle, clinically silent patterns often missed by human observers, highlighting its transformative role in early diagnosis and decision-making. This work 
+                            emphasizes AI’s growing potential in surfacing critical findings in medical imaging.
+                        </p>
+                </div>
+                <div className="flex items-center justify-center">
+                    <img 
+                    src={MNIT1} 
+                    alt="sanfordimage" 
+                    className="w-full max-w-xs object-contain rounded-2xl cursor-pointer"
+                />
+                </div>
+                </div>
+                <hr className="w-[95%] border-t-1 border-blue-700 my-4 self-center" />
+
+
+                {/**BOX */}
+                <div className="flex flex-col-reverse cursor-default md:flex-row items-center gap-4 px-2 hover:scale-101 duration-300 group">
+                    <div className="flex-1 flex flex-col">
+                        <div className="flex items-center font-medium">
+                            <CgEditBlackPoint className="mr-1 mt-1 w-5 h-5 group-hover:text-blue-700"/>
+                            <h1 className="text-xl group-hover:text-blue-700 transition-all duration-300">Reducing Miss Rates in GI Endoscopy: A Data-Centric AI Approach</h1>
+                        </div>
+                        <div className="flex items-center text-md">
+                            <IoLocation className="mr-2 text-red-600"/>
+                              <h1> MNIT Jaipur, 2025</h1>
+                        </div>
+                        <p className="text-justify ml-1 flex-grow">
+                            - I presented how curated datasets and strong benchmarking play a crucial role in detecting overlooked gastrointestinal (GI) pathologies. Emphasizing deep learning, 
+                            the talk focused on minimizing miss rates in GI endoscopy through data-centric AI strategies that enhance model reliability and clinical relevance. This approach highlights 
+                            the power of well-designed datasets in driving meaningful improvements in diagnostic accuracy.
+                        </p>
+                </div>
+                <div className="flex items-center justify-center">
+                    <img 
+                    src={MNIT2} 
+                    alt="sanfordimage" 
+                    className="w-full max-w-xs object-contain rounded-2xl cursor-pointer"
+                />
+                </div>
+                </div>
+                <hr className="w-[95%] border-t-1 border-blue-700 my-4 self-center" />
+
                 {/**Second Box */}
 
                 <div className="flex flex-col-reverse md:flex-row cursor-default items-center gap-4 px-2 hover:scale-101 duration-300 group">
@@ -46,11 +133,10 @@ const Workshops:React.FC=()=>{
                               <h1> Brown Bag Series, University of South Dakota, 2024</h1>
                         </div>
                         <p className="text-justify ml-1 flex-grow">
-                            - In this talk, I explored the transformative impact of artificial intelligence in radiology and gastrointestinal (GI) endoscopy. 
-                            AI-powered models are not just augmenting human expertise but also redefining diagnostic accuracy, efficiency, and accessibility in medical imaging. 
-                            I highlighted cutting-edge AI techniques for disease detection, segmentation, and classification, demonstrating how deep learning models surpass human 
-                            vision in complex medical scenarios. Additionally, I discussed the ethical and practical challenges of AI deployment in clinical settings, paving the way 
-                            for the next generation of intelligent healthcare solutions.
+                            - In this talk, I explored how AI is revolutionizing radiology and GI endoscopy by enhancing diagnostic accuracy and efficiency. 
+                            I showcased advanced deep learning techniques for disease detection, segmentation, and classification, highlighting their ability 
+                            to outperform human vision. I also addressed key ethical and practical challenges in clinical AI adoption, emphasizing the path toward 
+                            more intelligent and trustworthy healthcare solutions.
                         </p>
                 </div>
                 <div className="flex items-center justify-center">
