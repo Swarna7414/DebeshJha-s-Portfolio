@@ -2,9 +2,9 @@ import React from "react";
 
 const AcademicCarrier:React.FC=()=>{
     return(
-        <section className="flex items-center justify-center">
-            <div>
-                <h1>This is Sai</h1>
+        <section className="min-h-screen flex items-center justify-center">
+            <div className="h-full w-full">
+                
             </div>
         </section>
     );
