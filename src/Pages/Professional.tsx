@@ -1,99 +1,75 @@
-import React from "react";
+import React, { useState } from "react";
+import { IoMdArrowDropleftCircle } from "react-icons/io";
+import { IoMdArrowDroprightCircle } from "react-icons/io";
+
+const slides = [
+  {
+    id: 1,
+    text: "First slide",
+    label: "First slide label",
+    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  },
+  {
+    id: 2,
+    text: "Second slide",
+    label: "Second slide label",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
+  {
+    id: 3,
+    text: "Third slide",
+    label: "Third slide label",
+    description:
+      "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
+  },
+];
 
 const Carousel: React.FC = () => {
+  const [current, setCurrent] = useState(0);
+
+  const nextSlide = () => {
+    setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+  };
+
+  const prevSlide = () => {
+    setCurrent((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+  };
+
   return (
-    <section className="pt-[80px]">
-    <div id="animation-carousel" className="relative w-full" data-carousel="static">
-      {/* Carousel wrapper */}
-      <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-        {/* Item 1 */}
-        <div className="hidden duration-200 ease-linear" data-carousel-item>
-          <div className="flex items-center justify-center">
-            <h1>Education</h1>
-          </div>
-        </div>
+    <div className="w-screen min-h-screen flex items-center justify-center bg-gray-100">
+      <div className="relative w-screen h-screen flex flex-col items-center justify-center bg-transparent text-white transition-all duration-300">
+        <h2 className="text-4xl font-bold mb-4">{slides[current].text}</h2>
+        <h3 className="text-2xl font-semibold mb-2">{slides[current].label}</h3>
+        <p className="text-base text-center max-w-2xl">{slides[current].description}</p>
 
-        {/* Item 2 */}
-        <div className="hidden duration-200 ease-linear" data-carousel-item>
-          <div className="flex items-center justify-center">
-            <h1>Service</h1>
-          </div>
-        </div>
+        {/* Arrows */}
+        <button
+          onClick={prevSlide}
+          className="absolute left-6 top-1/2 transform -translate-y-1/2 bg-blue-400/70 rounded-full flex items-center justify-center hover:bg-blue-600 transition cursor-pointer text-4xl"
+        >
+          <IoMdArrowDropleftCircle/>
+        </button>
+        <button
+          onClick={nextSlide}
+          className="absolute right-6 top-1/2 transform -translate-y-1/2 bg-blue-400/70 rounded-full flex items-center justify-center hover:bg-blue-600 transition cursor-pointer text-4xl"
+        >
+          <IoMdArrowDroprightCircle/>
+        </button>
 
-        {/* Item 3 */}
-        <div className="hidden duration-200 ease-linear" data-carousel-item="active">
-          <div className="flex items-center justify-center">
-            <h1>My achievements</h1>
-          </div>
-        </div>
-
-        {/* Item 4 */}
-        <div className="hidden duration-200 ease-linear" data-carousel-item>
-          <div className="flex items-center justify-center">
-            <h1>Your achievements</h1>
-          </div>
-        </div>
-
-        {/* Item 5 */}
-        <div className="hidden duration-200 ease-linear" data-carousel-item>
-          <div className="flex items-center justify-center">
-            <h1>Another Guy's Achievements</h1>
-          </div>
+        {/* Dots */}
+        <div className="absolute bottom-6 flex gap-2">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrent(index)}
+              className={`w-3 h-3 rounded-full ${
+                index === current ? "bg-white" : "bg-white/40"
+              }`}
+            />
+          ))}
         </div>
       </div>
-
-      {/* Slider controls */}
-      <button
-        type="button"
-        className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        data-carousel-prev
-      >
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-          <svg
-            className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 6 10"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M5 1 1 5l4 4"
-            />
-          </svg>
-          <span className="sr-only">Previous</span>
-        </span>
-      </button>
-
-      <button
-        type="button"
-        className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        data-carousel-next
-      >
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-          <svg
-            className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 6 10"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="m1 9 4-4-4-4"
-            />
-          </svg>
-          <span className="sr-only">Next</span>
-        </span>
-      </button>
     </div>
-    </section>
   );
 };
 
