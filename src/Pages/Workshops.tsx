@@ -4,6 +4,11 @@ import sandford from "../assets/Talks/sanford.png";
 import IItRorke from "../assets/Talks/𝗜𝗜𝗧𝗥𝗼𝗼𝗿𝗸𝗲𝗲.png"
 import MNIT1 from "../assets/Talks/MNIT1.png"
 import MNIT2 from "../assets/Talks/MNIT2.png"
+import BeyondHuman from "../assets/Talks/BeyondHuman.jpg";
+import TransformingMedicalAi from "../assets/Talks/TransformingMedicalAi.png"
+import Biospy from "../assets/Talks/Biopsy.jpg"
+import future from "../assets/Talks/Future.jpg"
+import carrar from "../assets/Talks/Carrar.jpg";
 
 const Workshops:React.FC=()=>{
     return(
@@ -141,7 +146,7 @@ const Workshops:React.FC=()=>{
                 </div>
                 <div className="flex items-center justify-center">
                     <img 
-                    src={sandford} 
+                    src={BeyondHuman} 
                     alt="sanfordimage" 
                     className="w-full max-w-xs object-contain rounded-2xl cursor-pointer"
                 />
@@ -170,7 +175,7 @@ const Workshops:React.FC=()=>{
                 </div>
                 <div className="flex items-center justify-center">
                     <img 
-                    src={sandford} 
+                    src={TransformingMedicalAi} 
                     alt="sanfordimage" 
                     className="w-full max-w-xs object-contain rounded-2xl cursor-pointer"
                 />
@@ -197,7 +202,7 @@ const Workshops:React.FC=()=>{
                 </div>
                 <div className="flex items-center justify-center">
                     <img 
-                    src={sandford} 
+                    src={Biospy} 
                     alt="sanfordimage" 
                     className="w-full max-w-xs object-contain rounded-2xl cursor-pointer"
                 />
@@ -223,7 +228,7 @@ const Workshops:React.FC=()=>{
                 </div>
                 <div className="flex items-center justify-center">
                     <img 
-                    src={sandford} 
+                    src={future} 
                     alt="sanfordimage" 
                     className="w-full max-w-xs object-contain rounded-2xl cursor-pointer"
                 />
@@ -248,7 +253,7 @@ const Workshops:React.FC=()=>{
                 </div>
                 <div className="flex items-center justify-center">
                     <img 
-                    src={sandford} 
+                    src={carrar} 
                     alt="sanfordimage" 
                     className="w-full max-w-xs object-contain rounded-2xl cursor-pointer"
                 />
