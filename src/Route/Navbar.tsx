@@ -19,15 +19,15 @@ const navLinkClasses = ({ isActive }: { isActive: boolean }) =>
   return (
     <div>
       
-      <header className="w-full p-5 fixed top-0 z-50 flex flex-row items-center justify-between bg-blue-300 backdrop-blur-sm shadow-sm">
+      <header className="w-full p-5 fixed top-0 z-50 flex flex-row items-center justify-between bg-blue-400 backdrop-blur-sm shadow-sm">
         
       <div className="group">
-        <h1 className="text-black text-4xl font-cursive hover:cursor-pointer transition-all duration-300 group-hover:font-bold italic cursive-vibes">
-        <span className="transition-all duration-300 group-hover:text-blue-600 text-blue-400 font-semibold">D</span>
+        <NavLink to="/" className="text-black text-4xl font-cursive hover:cursor-pointer transition-all duration-300 group-hover:font-bold italic cursive-vibes">
+        <span className="transition-all duration-300 group-hover:text-blue-600 text-blue-500 font-semibold">D</span>
         ebesh{" "}
-        <span className="transition-all duration-300 group-hover:text-blue-600 text-blue-400 font-semibold">J</span>
+        <span className="transition-all duration-300 group-hover:text-blue-600 text-blue-500 font-semibold">J</span>
         ha
-      </h1>
+      </NavLink>
     </div>
 
         
@@ -38,7 +38,6 @@ const navLinkClasses = ({ isActive }: { isActive: boolean }) =>
           <NavLink to="/professional" className={navLinkClasses}>Professional Career</NavLink>
           <NavLink to="/dataset" className={navLinkClasses}>DataSet</NavLink>
           <NavLink to="/myworks" className={navLinkClasses}>MyWorks</NavLink>
-          <NavLink to="/blogs" className={navLinkClasses}>Blogs</NavLink>
           <NavLink to="/contact" className="shadow-sm shadow-blue-500 px-2.5 py-2 rounded-md font-medium hover:scale-105 hover:shadow-blue-500 text-black hover:text-white duration-300">Contact Me</NavLink>
         </div>
         
@@ -58,14 +57,13 @@ const navLinkClasses = ({ isActive }: { isActive: boolean }) =>
           menuOpen ? "translate-x-0" : "translate-x-full"
         }` }
       >
-        <div className="flex flex-col gap-4 text-white text-md p-6 pt-[80px] bg-blue-200/30 h-full backdrop-blur-xl z-50">
+        <div className="flex flex-col gap-4 text-black text-md p-6 pt-[80px] bg-blue-200/30 h-full backdrop-blur-xl z-50">
           <NavLink to="/home" className={navLinkClasses}>Home</NavLink>
-          <NavLink to="/publications" className={navLinkClasses}>Publications</NavLink>
-          <NavLink to="/workshops" className={navLinkClasses}>Workshops & Talks</NavLink>
-          <NavLink to="/career" className={navLinkClasses}>Professional Career</NavLink>
+          <NavLink to="/publication" className={navLinkClasses}>Publications</NavLink>
+          <NavLink to="/workshop" className={navLinkClasses}>Workshops & Talks</NavLink>
+          <NavLink to="/professional" className={navLinkClasses}>Professional Career</NavLink>
           <NavLink to="/dataset" className={navLinkClasses}>DataSet</NavLink>
           <NavLink to="/myworks" className={navLinkClasses}>MyWorks</NavLink>
-          <NavLink to="/blogs" className={navLinkClasses}>Blogs</NavLink>
           <NavLink to="/contact" className={navLinkClasses}>Contact Me</NavLink>
         </div>
       </div>

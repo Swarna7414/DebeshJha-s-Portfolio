@@ -1,7 +1,5 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-
-
 import Publications from "./Pages/Publications";
 import Workshops from "./Pages/Workshops";
 import Professional from "./Pages/Professional";
