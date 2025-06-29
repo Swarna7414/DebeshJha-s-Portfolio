@@ -13,9 +13,9 @@ import {
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { RiTwitterXLine } from 'react-icons/ri';
 
-const DevelopHome: React.FC = () => {
+const SecondPage: React.FC = () => {
   return (
-    <section className="h-screen w-full p-5 pt-[90px]">
+    <section className="h-screen w-full p-5">
       <div className="h-full w-full flex flex-col lg:flex-row items-center justify-between">
         <div className="w-1/2 sm:w-[70%] lg:w-1/3 h-[83%] flex items-center justify-center ml-0 lg:ml-16">
           
@@ -29,7 +29,7 @@ const DevelopHome: React.FC = () => {
           <img
             src={HomeScreenImage}
             alt="Home Image"
-            className="hidden lg:block w-full h-full rounded-4xl hover:rounded-2xl object-contain hover:scale-101 duration-300 cursor-pointer hover:shadow-2xl hover:shadow-blue-500"
+            className="hidden lg:block w-full h-full rounded-4xl hover:rounded-2xl object-contain duration-300 cursor-pointer hover:shadow-2xl hover:shadow-blue-500"
           />
         </div>
 
@@ -72,5 +72,4 @@ const IconBox = ({
   </div>
 );
 
-
-export default DevelopHome;
+export default SecondPage;

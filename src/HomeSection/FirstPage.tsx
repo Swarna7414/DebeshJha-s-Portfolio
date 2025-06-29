@@ -3,7 +3,7 @@ import "../Styles/Home.css";
 import "../Styles/animation.css";
 import logo from "../assets/Home0.png";
 
-const Develop: React.FC = () => {
+const FirstPage: React.FC = () => {
   return (
     <section id="home" className="hero">
       <div className="container">
@@ -38,4 +38,4 @@ const Develop: React.FC = () => {
   );
 };
 
-export default Develop;
+export default FirstPage;
