@@ -19,50 +19,13 @@
 .cursive-italianno {
   font-family: 'Italianno', cursive;
 }
-
-::-webkit-scrollbar-button {
-  display: none;
-}
-
-/* Scrollbar track */
-::-webkit-scrollbar {
-  width: 2px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-
-::-webkit-scrollbar-thumb {
-  background: #3B82F6;
-  border-radius: 10px;
-  transition: background 0.3s ease;
-}
-
-
-::-webkit-scrollbar-thumb:hover {
-  background: #3B82F6;
-}
-
-
-.scrollbar-hide::-webkit-scrollbar {
-  width: 0px;
-}
-
-.scrollbar-hide:hover::-webkit-scrollbar {
-  width: 6px;
-}
-
 .scrollbar-hide {
+  -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
-.scrollbar-hide:hover {
-  scrollbar-width: thin;
-  scrollbar-color: #3B82F6 transparent;
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
-
 .gradient-header {
   background: #e2f1ec;
   background: -webkit-linear-gradient(to right, #e2f1ec, #75dfa5);
