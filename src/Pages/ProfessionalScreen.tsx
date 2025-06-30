@@ -46,7 +46,7 @@ const Carousel: React.FC<CarouselProps> = ({ children }) => {
               key={index}
               onClick={() => setCurrent(index)}
               className={`w-3 h-3 rounded-full ${
-                index === current ? "bg-white" : "bg-white/40"
+                index === current ? "bg-blue-500" : "bg-blue-300"
               }`}
             />
           ))}
