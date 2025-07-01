@@ -1,19 +1,19 @@
 .hover-white-shadow:hover {
-  text-shadow: 0 0 5px rgba(71, 233, 165, 0.4), 0 0 10px rgba(71, 233, 165, 0.4);
+  text-shadow: 0 0 5px rgba(0, 2, 4, 0.4), 0 0 10px rgba(0, 0, 0, 0.4);
 }
 .white-text-shadow {
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.4), 0 0 10px rgba(255, 255, 255, 0.4);
+  text-shadow: 0 0 5px rgba(68, 204, 235, 0.4), 0 0 10px rgba(255, 255, 255, 0.4);
 }
 .bg-button{
-  background: #AAFFA9;
-  background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);
-  background: linear-gradient(to right, #11FFBD, #AAFFA9);
+  background: #56ccf2;
+  background: -webkit-linear-gradient(to right, #56ccf2, #2f80ed);
+  background: linear-gradient(to right, #56ccf2, #2f80ed) !important;
 }
 .bg-button:hover {
-  background: #29ffb8 !important;
+  background: #56ccf2 !important;
 }
 .text-color {
-  background: linear-gradient(to right, #11FFBD, #AAFFA9);
+  background: linear-gradient(to right, #56ccf2, #2f80ed);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
