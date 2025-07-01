@@ -16,10 +16,11 @@ const Contact:React.FC=()=>{
     const [formdata,setformdata]=useState<Details>({
         name:"",
         email:"",
+        subject:"",
         message:"",
     });
 
-    const HandleChange = (e:React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>)=>{
+    const HandleChange = (e:React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>)=>{
     const {name,value}=e.target;
     setformdata((prev)=>({
         ...prev,
@@ -41,10 +42,11 @@ const Contact:React.FC=()=>{
         })
         .then((res) => {
             if (res.ok) {
-                alert("✅ Message sent successfully to Debesh Jha!");
+                alert("✅ Thank you for reaching out to us. We'll get back to you shortly!");
                     setformdata({
                     name: "",
                     email: "",
+                    subject:"",
                     message: ""
             });
             } else {
@@ -63,7 +65,7 @@ const Contact:React.FC=()=>{
             <h1 className="text-center font-bold text-4xl cursor-pointer">Let's Get In Touch</h1>
             <div className="flex flex-col lg:flex-row gap-8 items-center">
                 <div className="order-2 lg:order-1 h-full lg:w-1/2 p-2 mt-5 flex flex-col">
-                    <h1 className="font-bold text-4xl text-black cursor-pointer hover:text-emerald-600">Contect Me</h1>
+                    <h1 className="font-bold text-4xl text-black cursor-pointer hover:text-blue-600">Contect Me</h1>
                     <div className="flex flex-col mt-5 ml-5 gap-y-8">
                         <div className="flex flex-row items-center  hover:underline hover:underline-offset-6 cursor-pointer">
                             <IoMailOutline className="text-3xl mr-2"/>
@@ -80,19 +82,19 @@ const Contact:React.FC=()=>{
                             <h1 className="text-2xl hover-white-shadow">Department of Computer Science, <br />414 E. Clark Street, <br />Vermillion, SD 57069</h1>
                         </div>
 
-                        <div className="flex flex-row items-center justify-center cursor-pointer text-black hover:font-bold duration-300 transition-all">
+                        <div className="flex flex-row items-center justify-center cursor-pointer text-black hover:font-bold duration-300 transition-all hover:text-white">
                             <button className="bg-button w-full h-auto p-3 rounded-2xl cursor-pointer" onClick={HandleMeet}>Let's Meet</button>
                         </div>
 
                     </div>
 
                     <div className="flex flex-row gap-11 items-center text-4xl ml-4 mt-8 justify-between">
-                        <BiLogoGmail className="rounded-full border-2 p-2 hover:bg-emerald-400 hover:text-black cursor-pointer hover:scale-120 hover:border-emerald-400 duration-300" onClick={Gmailto}/>
-                        <PiMicrosoftOutlookLogo className="rounded-full border-2 p-2 hover:bg-emerald-400 hover:text-black cursor-pointer hover:scale-120 hover:border-emerald-400 duration-300" onClick={Mailto}/>
-                        <TiSocialLinkedin className="rounded-full border-2 p-2 hover:bg-emerald-400 hover:text-black cursor-pointer hover:scale-120 hover:border-emerald-400 duration-300" onClick={Linkedin}/>
-                        <RiTwitterXLine className="rounded-full border-2 p-2 hover:bg-emerald-400 hover:text-black cursor-pointer hover:scale-120 hover:border-emerald-400 duration-300" onClick={Twitter}/>
-                        <FaFacebookF className="rounded-full border-2 p-2 hover:bg-emerald-400 hover:text-black cursor-pointer hover:scale-120 hover:border-emerald-400 duration-300" onClick={FaceBook}/>
-                        <FaInstagram className="rounded-full border-2 p-2 hover:bg-emerald-400 hover:text-black cursor-pointer hover:scale-120 hover:border-emerald-400 duration-300" onClick={Instagram}/>
+                        <BiLogoGmail className="rounded-full border-2 p-2 hover:bg-blue-400 hover:text-black cursor-pointer hover:scale-120 hover:border-blue-400 duration-300" onClick={Gmailto}/>
+                        <PiMicrosoftOutlookLogo className="rounded-full border-2 p-2 hover:bg-blue-400 hover:text-black cursor-pointer hover:scale-120 hover:border-blue-400 duration-300" onClick={Mailto}/>
+                        <TiSocialLinkedin className="rounded-full border-2 p-2 hover:bg-blue-400 hover:text-black cursor-pointer hover:scale-120 hover:border-blue-400 duration-300" onClick={Linkedin}/>
+                        <RiTwitterXLine className="rounded-full border-2 p-2 hover:bg-blue-400 hover:text-black cursor-pointer hover:scale-120 hover:border-blue-400 duration-300" onClick={Twitter}/>
+                        <FaFacebookF className="rounded-full border-2 p-2 hover:bg-blue-400 hover:text-black cursor-pointer hover:scale-120 hover:border-blue-400 duration-300" onClick={FaceBook}/>
+                        <FaInstagram className="rounded-full border-2 p-2 hover:bg-blue-400 hover:text-black cursor-pointer hover:scale-120 hover:border-blue-400 duration-300" onClick={Instagram}/>
                     </div>
 
                 </div>
@@ -104,7 +106,7 @@ const Contact:React.FC=()=>{
                                 <label className="text-2xl">Name
                                     <div className="flex flex-row items-center mt-1">
                                         <input name="name" type="text" value={formdata.name} onChange={HandleChange} required
-                                        className="p-1.5 border-2 w-full rounded-lg focus:shadow-emerald-400 focus:shadow-md"/>
+                                        className="p-1.5 border-2 w-full rounded-lg focus:shadow-blue-400 focus:shadow-md"/>
                                     </div>
                                 </label>
                             </div>
@@ -113,8 +115,26 @@ const Contact:React.FC=()=>{
                                 <label className="text-2xl">E-Mail
                                     <div className="flex flex-row items-center mt-1">
                                         <input name="email" type="email" value={formdata.email} onChange={HandleChange} required
-                                        className="p-1.5 border-2 w-full rounded-lg focus:shadow-emerald-400 focus:shadow-md focus:bg-transparent"/>
+                                        className="p-1.5 border-2 w-full rounded-lg focus:shadow-blue-400 focus:shadow-md focus:bg-transparent"/>
                                     </div>
+                                </label>
+                            </div>
+
+                            {/** Drop Box */}
+                            <div className="space-y-4">
+                                <label className="text-2xl">Purpose of Inquiry
+                                <div className="flex flex-row items-center mt-1">
+                                <select
+                                name="subject" value={formdata.subject} onChange={HandleChange} required
+                                className="p-1.5 border-2 w-full rounded-lg focus:shadow-blue-400 focus:shadow-md focus:bg-transparent">
+                                    <option value="" disabled>Select</option>
+                                    <option value="General Inquiry">General Inquiry</option>
+                                    <option value="Professional Talk">Professional Talk</option>
+                                    <option value="collaboration">Collaboration</option>
+                                    <option value="Support">Support</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                                </div>
                                 </label>
                             </div>
 
@@ -122,11 +142,11 @@ const Contact:React.FC=()=>{
                                 <label className="text-2xl">Message
                                     <div className="flex flex-row items-center mt-1">
                                         <textarea name="message" value={formdata.message} onChange={HandleChange} required
-                                        className="p-1.5 border-2 w-full h-36 rounded-lg focus:shadow-emerald-400 focus:shadow-md"/>
+                                        className="p-1.5 border-2 w-full h-30 rounded-lg focus:shadow-blue-400 focus:shadow-md"/>
                                     </div>
                                 </label>
                             </div>
-                            <button type="submit" className="bg-button text-xl text-black w-full font-semibold rounded-2xl p-3 cursor-pointer hover:shadow-sm hover:scale-97 hover:shadow-emerald-400 duration-300 transition">Send</button>
+                            <button type="submit" className="bg-button text-xl text-black w-full font-semibold rounded-2xl p-3 cursor-pointer hover:shadow-sm hover:scale-97 hover:shadow-blue-400 hover:text-white duration-300 transition">Send</button>
                         </form>
                     </div> 
                 </div>
