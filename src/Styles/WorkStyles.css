@@ -1,0 +1,21 @@
+.bg-button{
+  background: #AAFFA9;
+  background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);
+  background: linear-gradient(to right, #11FFBD, #AAFFA9);
+}
+.bg-button:hover {
+  background: #020705 !important;
+}
+
+.perspective {
+  perspective: 1000px;
+}
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}

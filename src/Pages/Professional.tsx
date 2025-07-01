@@ -1,10 +1,17 @@
-const Professional:React.FC=()=>{
-    return(
-        <section className="max-h-screen">
-            <div>
-                <h1>THis is the Professional</h1>
-            </div>
-        </section>
-    );
-}
-export default Professional;
+import React from "react";
+import Carousel from "./ProfessionalScreen";
+import AndN from "./Professional/AandN";
+import AcademicCarrier from "./Professional/AcademicCarrier";
+import Professional from "./Professional/Professioalcarrier";
+
+const ProfessionalCareerScreen: React.FC = () => {
+  return (
+    <Carousel>
+      <AndN />
+      <AcademicCarrier />
+      <Professional />
+    </Carousel>
+  );
+};
+
+export default ProfessionalCareerScreen;

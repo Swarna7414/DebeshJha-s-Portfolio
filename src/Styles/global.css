@@ -7,3 +7,17 @@
 .custom-cursor {
   cursor: url('/cursor.png') 16 16, auto;
 }
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #3b82f6; /* Tailwind blue-500 */
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-button {
+  display: none; /* hides arrows */
+}
