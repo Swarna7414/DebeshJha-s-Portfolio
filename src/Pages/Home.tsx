@@ -3,6 +3,7 @@ import "../Styles/global.css";
 import "../Styles/animation.css";
 import HomeScreenImage from "../assets/Home/image2.png";
 import SmallScreen from "../assets/SmallPicture.png";
+// import changed from "../assets/changed.jpg";
 import cursorImage from "../assets/cursor.png";
 import {Clarivate,Dblb,Github,GoogleScholr,Linkedin,Orcid,ResearchGate,Semanticscholar,Twitter,} from '../Services/Calls';
 import { FaGoogleScholar } from 'react-icons/fa6';
@@ -26,32 +27,36 @@ const Home: React.FC = () => {
   return (
     <section className="h-screen w-full p-5 pt-[90px] custom-cursor" style={{ cursor: `url(${cursorImage}) 16 16, auto` }}>
       <div className="h-full w-full flex flex-col xl:flex-row items-center justify-between">
-        <div className="w-1/2 sm:w-[70%] xl:w-1/3 h-[83%] flex items-center justify-center ml-0 lg:ml-16">
-          
+        <div className="w-full sm:w-[70%] xl:w-1/3 flex items-center justify-center ml-0 lg:ml-16">
+          {/* Small Screen Image */}
           <img
             src={SmallScreen}
             alt="HomeImage"
-            className="block xl:hidden w-50 h-50 md:w-64 md:h-64 mt-6 rounded-full object-cover shadow-md shadow-blue-500 duration-300 hover:scale-105"
-           onClick={RedirecttoHome}/>
-
+            className="block xl:hidden w-72 md:w-80 rounded-full object-cover mt-6 shadow-md shadow-blue-500 duration-300 hover:scale-105"
+            onClick={RedirecttoHome}
+          />
           
+          {/* Large Screen Image */}
           <img
             src={HomeScreenImage}
             alt="Home Image"
             className="hidden xl:block w-full h-full rounded-4xl hover:rounded-2xl object-cover hover:scale-101 duration-300 hover:shadow-2xl hover:shadow-blue-500"
-           onClick={RedirecttoHome}/>
+            onClick={RedirecttoHome}
+          />
         </div>
 
           <div className="xl:w-3/5 sm:w-full h-[83%] rounded-2xl px-5 flex flex-col">
             <h1 className="block lg:hidden text-transparent">{""}This is Debash</h1>
             <h1 className="hidden xl:block text-4xl font-semibold mb-2 group">This is {" "}<span className="group-hover:text-blue-500 text-5xl cursor-pointer transition-all duration-300 font-bold relative">Debesh Jha <span className="hidden lg:inline-block lg:group-hover:inline-block ml-2 animate-pulse group-hover:animate-bounce">🤖</span></span></h1>
             <div className="flex flex-col self-center sm:px-3">
-              <h1 className="text-justify text-xl font-medium w-full max-w-4xl xl:mt-12">
-                I'm Visiting Assistant Professor in the Department of Computer Science at the University of South Dakota. My research focuses on AI-driven tools for medical imaging and diagnostics. 
-                I’ve developed models like ColonSegNet and contributed to datasets such as Kvasir-SEG, HyperKvasir, and PolypGen. Recognized among the world’s top 2% scientists by Stanford and Elsevier, I aim to build reliable systems 
-                that support radiologists in diagnosing faster and more accurately. My work spans gastrointestinal imaging, tumor analysis, and predictive modeling for radiation therapy, as well as vision-language models, anomaly detection, 
-                and surgical AI. I’m honored to be named a 2024 Top Scholar by ScholarGPS, ranking in the top 0.5% of scholars worldwide, including #51 in Image Segmentation and #1,201 in Medical Imaging, based on productivity, impact, and quality.
-            </h1>
+              <div className="w-full px-4 sm:px-6">
+                <h1 className="text-justify text-xl font-medium max-w-4xl xl:mt-12">
+                  I'm Visiting Assistant Professor in the Department of Computer Science at the University of South Dakota. My research focuses on AI-driven tools for medical imaging and diagnostics. 
+                  I’ve developed models like ColonSegNet and contributed to datasets such as Kvasir-SEG, HyperKvasir, and PolypGen. Recognized among the world’s top 2% scientists by Stanford and Elsevier, I aim to build reliable systems 
+                  that support radiologists in diagnosing faster and more accurately. My work spans gastrointestinal imaging, tumor analysis, and predictive modeling for radiation therapy, as well as vision-language models, anomaly detection, 
+                  and surgical AI. I’m honored to be named a 2024 Top Scholar by ScholarGPS, ranking in the top 0.5% of scholars worldwide, including #51 in Image Segmentation and #1,201 in Medical Imaging, based on productivity, impact, and quality.
+                </h1>
+              </div>
             </div>
             <div className="mt-6 sm:mt-0 lg:mt-auto lg:self-end sm:self-center flex flex-row-reverse sm:gap-8 gap-1.5 text-4xl mb-4">
                 <IconBox Icon={RiTwitterXLine} onClick={Twitter} />
